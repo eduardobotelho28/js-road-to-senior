@@ -27,7 +27,5 @@ const verificaLocalStorage = () => {
     }
 }
 
-//tesste-comit 
-
 verificaLocalStorage()
 
