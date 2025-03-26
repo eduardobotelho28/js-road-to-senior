@@ -1,3 +1,6 @@
+
+//para usar o memoization, também é importante saber closures.
+
 function memoizeFactorial() {
     const cache = {}; 
 

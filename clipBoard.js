@@ -11,8 +11,6 @@ copyButton.addEventListener('click', (evt) => {
 function readCopy () {
     navigator.clipboard.readText()
     .then (pasteText => {
-        console.log(pasteText)
-
         if(pasteText !== '')  p.innerHTML =  `Seu último texto copiado é: ${pasteText}`
     })
 }
