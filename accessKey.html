@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="acessKey.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        nav a {
+            display: block;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Use atalhos de teclado para navegar</h2>
+    <p>(Em Windows: Alt + tecla | No Mac: Control + tecla)</p>
+
+    <nav>
+        <a href="#home" accesskey="h" id="home">🏠 Home (Alt + H)</a>
+        <a href="#sobre" accesskey="s" id="sobre">ℹ️ Sobre (Alt + S)</a>
+        <a href="#contato" accesskey="c" id="contato">📞 Contato (Alt + C)</a>
+    </nav>
+
+    <p id="feedback"></p>
+</body>
+</html>
