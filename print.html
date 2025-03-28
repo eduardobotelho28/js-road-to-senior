@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="print_pdf.js"></script>
+    <style>
+        table {
+            width: 300px;
+            font: 17px calibri;
+        }
+
+        table,th,td {
+            border: solid 1px gray;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+        button {
+            background-color: beige;
+            color: blue;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="table">
+        <table>
+            <tr>
+                <th>Equipamento</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <td>Mouse</td>
+                <td>1</td>
+                <td>10,00</td>
+            </tr>
+            <tr>
+                <td>Mouse 2</td>
+                <td>2</td>
+                <td>20,00</td>
+            </tr>
+        </table>
+    </div> 
+    <button id="print-btn">Imprimir</button>
+</body>
+</html>
