@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="segurar">
+        Loop
+    </button>
+    <button id="mudar">Adicionar Texto</button>
+
+    <div id="conteudo"></div>
+
+    <script>
+        const worker = new Worker('worker.js')
+    
+        worker.onmessage = (message) => {
+            console.log(message.data)
+        }
+
+        segurar.onclick = () => {
+          worker.postMessage("iniciar o loop")
+        }
+
+        mudar.onclick = () => {
+            conteudo.innerHTML = "Algum Texto"
+        }
+
+    </script>
+</body>
+</html>
