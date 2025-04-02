@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BroadCast1</title>
+</head>
+<body>
+    <form autocomplete="off" onsubmit="sendMessage(event)">
+        <input type="text" id="message">
+        <input type="submit" value="Enviar Mensagem">
+    </form>
+
+    <script>
+
+        const bc = new BroadcastChannel ('my-channel')
+
+        function sendMessage (event) {
+            event.preventDefault()
+
+            const messageField = document.querySelector('#message')
+
+            const message = messageField.value
+
+            messageField.value = ''
+
+            bc.postMessage(message)
+  
+        }
+
+    </script>
+</body>
+</html>
